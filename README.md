@@ -12,20 +12,24 @@ The data is stored in arrays in the server's RAM, utilizing objects to represent
 To use the Product Management System, follow these steps:
 
 1.  Clone the repository to your local machine:
-	```
+  
+    ```
     git clone https://github.com/ballpanuwat25/product-management-system.git
     ```
 2.  Navigate to the project directory:
+
 	```
     cd product-management-system
     ```
 3.  Install any necessary dependencies:
+   
 	```
     npm install
     ```
 4.  Start the server:
+   
 	```
-    npm start
+    node index
     ```
     This will launch the server, and you can access the product management system via the specified port (default: http://localhost:3000).
     
