@@ -1,6 +1,6 @@
-import products from '../models/db.js';
+const products = require('../models/db');
 
-export const editProduct = (req, res) => {
+const editProduct = (req, res) => {
     const { id } = req.params;
     const { name, type, price, quantity } = req.body;
     const product = products.find((product) => product.id == id);
@@ -18,3 +18,5 @@ export const editProduct = (req, res) => {
     }
     res.send(`Product with id ${id} has been edited`);
 }
+
+module.exports = editProduct;

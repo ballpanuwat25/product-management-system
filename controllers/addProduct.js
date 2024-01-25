@@ -1,7 +1,9 @@
-import products from '../models/db.js';
+const products = require('../models/db');
 
-export const addProduct = (req, res) => {
+const addProduct = (req, res) => {
     const newProduct = req.body;
     products.push(newProduct);
     res.send(`Product added successfully`);
 }
+
+module.exports = addProduct;
